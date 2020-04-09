@@ -1,6 +1,6 @@
-FROM python:3.7
+FROM python:3
 
 WORKDIR /app
 COPY main.py .
 
-#RUN pip install -r /code/requirements.txt -i https://pypi.douban.com/simple
+CMD [ "python", "./main.py", "ALL"]
