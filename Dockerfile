@@ -17,4 +17,4 @@ RUN echo "**** install Python ****" && \
 WORKDIR /app
 COPY main.py .
 
-CMD [ "python", "./main.py", "ALL"]
+# CMD [ "python", "./main.py", "ALL"]
