@@ -6,7 +6,7 @@ import sys
 
 def main():
     try:
-        f = open('result.txt')
+        f = open('result.txt', mode='w')
         if len(sys.argv) <= 1:
             print('缺少必要参数：测试组件！')
             f.write('缺少必要参数：测试组件！')
