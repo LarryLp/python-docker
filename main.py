@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 import sys
-
+import time
 
 def main():
     try:
@@ -17,8 +17,12 @@ def main():
             print('测试组件: ', sys.argv[1:])
             f.write('测试组件: %s ' % str(sys.argv[1:]))
         f.close()
+        for i in range(1000):
+            time.sleep(1)
+            print(i)
     except Exception as e:
         print(e)
+
 
 
 if __name__ == '__main__':
