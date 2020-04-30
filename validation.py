@@ -17,7 +17,7 @@ class FitnessValidation(object):
                         filename= './result.log' #有了filename参数就不会直接输出显示到控制台，而是直接写入文件
                         )
     # 此处的api_baseUrl是本地api部署址
-    def __init__(self, standard=True, data='', api_baseUrl='http://localhost:5000', ):
+    def __init__(self, standard=True, data='', api_baseUrl='http://172.18.103.71:5000', ):
         self.data = data
         self.standard = standard
         self.api_baseUrl = api_baseUrl
